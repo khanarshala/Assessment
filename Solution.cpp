@@ -1,3 +1,6 @@
+/*If I think of the network and its connections like an undirected graph and its edges, then a critical connection, as defined by this problem, 
+is the same as a bridge in the graph. To find out which edges are bridges, I've used Tarjan's Algorithm.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 void print_vector(vector<vector<auto> > v){
@@ -58,3 +61,9 @@ main(){
    vector<vector<int>> v = {{0,1},{1,2},{2,0},{1,3}};
    print_vector(ob.criticalConnections(4,v));
 }
+
+//TC: O(V+2E), where V = no. of vertices, E = no. of edges. 
+//It is because the algorithm is just a simple DFS traversal.
+
+//SC: O(V+2E) + O(3V), where V = no. of vertices, E = no. of edges. O(V+2E) to store the graph in an adjacency 
+//list and O(3V) for the three arrays 
