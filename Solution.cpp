@@ -66,4 +66,4 @@ main(){
 //It is because the algorithm is just a simple DFS traversal.
 
 //SC: O(V+2E) + O(3V), where V = no. of vertices, E = no. of edges. O(V+2E) to store the graph in an adjacency 
-//list and O(3V) for the three arrays 
+//list and O(3V) for the three arrays.
